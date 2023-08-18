@@ -1,0 +1,8 @@
+# Ignore JetBrains IDE shii
+.idea
+
+# Ignore CDK output directory
+cdk.out
+
+# Ignore environment config file
+environment.conf

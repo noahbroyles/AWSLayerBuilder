@@ -1,0 +1,5 @@
+secsie-conf==3.1.1
+constructs==10.2.69
+aws-cdk-lib==2.92.0
+boto3~=1.26.92
+botocore~=1.29.92
