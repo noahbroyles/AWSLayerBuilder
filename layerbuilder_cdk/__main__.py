@@ -26,7 +26,7 @@ app = cdk.App()
 # Layer stack
 layer_stack = LayerStack(
     scope=app,
-    construct_id="LayerStack",
+    construct_id="LayerBuilderStack",
     environment=deployment_environment,
     env=aws_environment,
 )
