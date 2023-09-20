@@ -12,12 +12,6 @@ repository_dir = Path(__file__).parent.parent.parent
 
 
 class LayerStack(cdk.Stack):
-    """
-    This stack contains general resources which control the BestNest-Shopify integration.
-
-    There are 3 possible deployments of this stack, one for dev, uat, and prod.
-    """
-
 
     def __init__(self, scope: Construct, construct_id: str, environment: str, **kwargs) -> None:
         """
@@ -38,7 +32,7 @@ class LayerStack(cdk.Stack):
             self,
             f'layer-bucket-{self.dev_environment}',
             encryption=cdk.aws_s3.BucketEncryption.S3_MANAGED,
-            removal_policy=cdk.RemovalPolicy.RETAIN
+            removal_policy=cdk.RemovalPolicy.DESTROY
         )
 
         ###################################################################
