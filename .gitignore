@@ -6,3 +6,6 @@ cdk.out
 
 # Ignore environment config file
 environment.conf
+
+# Ignore pycache
+**/__pycache__
