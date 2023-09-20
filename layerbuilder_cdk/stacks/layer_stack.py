@@ -1,6 +1,5 @@
 import aws_cdk as cdk
 
-from typing import List
 from pathlib import Path
 from constructs import Construct
 from aws_cdk.aws_apigateway import LambdaIntegration
