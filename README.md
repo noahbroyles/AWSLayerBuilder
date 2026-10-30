@@ -4,7 +4,7 @@ This is a dope tool to build lambda layers for AWS. Currently, it only works to 
 Considering how much free time I have, it might always be that way.
 
 ## How to use
-You can use the existing API deployment available at https://op71hud2zj.execute-api.us-east-2.amazonaws.com/LayerAPI, or 
+You can use the existing API deployment available at https://0i66k1x0mi.execute-api.us-east-2.amazonaws.com/LayerAPI, or 
 create your own instance of the layer builder API via the AWS CDK.
 
 1. To use the existing layer builder API, use the example at [`createALayer.py`](https://github.com/noahbroyles/AWSLayerBuilder/blob/master/createALayer.py).
