@@ -44,11 +44,13 @@ class LayerStack(cdk.Stack):
             "X86_64": LambdaArchitecture(architecture=Architecture.X86_64, name="X86_64"),  # type: ignore
         }
         python_runtimes = {
-            "python3.7": PythonLambdaRuntime(runtime=Runtime.PYTHON_3_7, name='python3.7', supported_architectures=[lambda_architectures["X86_64"]]),                                     # type: ignore
-            "python3.8": PythonLambdaRuntime(runtime=Runtime.PYTHON_3_8, name='python3.8', supported_architectures=[lambda_architectures["ARM_64"], lambda_architectures["X86_64"]]),     # type: ignore
-            "python3.9": PythonLambdaRuntime(runtime=Runtime.PYTHON_3_9, name='python3.9', supported_architectures=[lambda_architectures["ARM_64"], lambda_architectures["X86_64"]]),     # type: ignore
             "python3.10": PythonLambdaRuntime(runtime=Runtime.PYTHON_3_10, name='python3.10', supported_architectures=[lambda_architectures["ARM_64"], lambda_architectures["X86_64"]]),  # type: ignore
             "python3.11": PythonLambdaRuntime(runtime=Runtime.PYTHON_3_11, name='python3.11', supported_architectures=[lambda_architectures["ARM_64"], lambda_architectures["X86_64"]]),  # type: ignore
+            "python3.12": PythonLambdaRuntime(runtime=Runtime.PYTHON_3_12, name='python3.12', supported_architectures=[lambda_architectures["ARM_64"], lambda_architectures["X86_64"]]),  # type: ignore
+            "python3.13": PythonLambdaRuntime(runtime=Runtime.PYTHON_3_13, name='python3.13', supported_architectures=[lambda_architectures["ARM_64"], lambda_architectures["X86_64"]]),  # type: ignore
+            "python3.14": PythonLambdaRuntime(runtime=Runtime.PYTHON_3_14, name='python3.14', supported_architectures=[lambda_architectures["ARM_64"], lambda_architectures["X86_64"]]),  # type: ignore
+            # TODO: When it is supported, add python3.15
+            # "python3.15": PythonLambdaRuntime(runtime=Runtime.PYTHON_3_15, name='python3.13', supported_architectures=[lambda_architectures["ARM_64"], lambda_architectures["X86_64"]]),  # type: ignore
         }
 
         # Now build all the lambdas
