@@ -29,7 +29,7 @@ b64_body = b64encode(
 ).decode()
 
 
-LAYER_API_URL = 'https://0i66k1x0mi.execute-api.us-east-2.amazonaws.com/LayerAPI/'
+LAYER_API_URL = 'https://0i66k1x0mi.execute-api.us-east-2.amazonaws.com/LayerAPI'
 
 response = requests.post(
     f"{LAYER_API_URL}/{python_version}/{architecture}",
